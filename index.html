@@ -709,7 +709,7 @@
       });
 
       // ── Booking Form Submit ──
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function () {
   if (window.location.hash === "#success-msg-v7w1") {
     document.getElementById("success-msg-v7w1").classList.remove("hidden");
     window.scrollTo({
@@ -717,7 +717,7 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth"
     });
   }
-});
+};
 </script>
 
 </body>
