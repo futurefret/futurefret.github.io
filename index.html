@@ -709,14 +709,17 @@
       });
 
       // ── Booking Form Submit ──
-      const bookingForm = document.getElementById('booking-form-h3i7');
-      const successMsg = document.getElementById('success-msg-v7w1');
+     <script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.location.hash === "#success-msg-v7w1") {
+    document.getElementById("success-msg-v7w1").classList.remove("hidden");
+    window.scrollTo({
+      top: document.getElementById("success-msg-v7w1").offsetTop,
+      behavior: "smooth"
+    });
+  }
+});
+</script>
 
-      bookingForm.addEventListener('submit', () => {
-        
-        bookingForm.classList.add('hidden');
-        successMsg.classList.remove('hidden');
-      });
-    </script>
-  </body>
+</body>
 </html>
